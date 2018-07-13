@@ -1,10 +1,10 @@
-#机器学习 人工标注样本工具Python+OpenCV
+# 机器学习 人工标注样本工具Python+OpenCV
 
-##应用场景
+## 应用场景
 最近小伙伴有个需求，需要对训练样本进行人工标注，需要框选出复杂场景图片中的气压表的部分，并标注出气压值，同时还需要知道气压表在图像中的位置，为解决这一问题，利用OpenCV的 鼠标框选的功能实现这一小工具
 
-##使用说明
-###1.目录
+## 使用说明
+### 1.目录
 ![这里写图片描述](https://img-blog.csdn.net/20180713123029988?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hidzEyMTM4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 deal.py  人工标注主程序
 generate_data  存放标注结果图像
@@ -14,14 +14,14 @@ original_data  存放原始图像数据
 
 ---
 
-###2.运行环境
+### 2.运行环境
 Python 2.7
 OpenCV 3.1
 
 ---
 
-###3.使用方法
-####3.1标注图像
+### 3.使用方法
+#### 3.1标注图像
 启动程序 执行 `python deal.py` 后
 会打开original_data文件夹下的一张图片
 ![这里写图片描述](https://img-blog.csdn.net/20180713124719767?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hidzEyMTM4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
@@ -37,13 +37,13 @@ OpenCV 3.1
 
 ---
 
-####3.2生成图像对应标注信息
+#### 3.2生成图像对应标注信息
 
 启动程序 执行 `python label.py` 就好了，生成的信息在label/label.txt中
 
 ---
 
-###4.代码
+### 4.代码
 deal.py
 
 ```python
