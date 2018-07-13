@@ -5,7 +5,7 @@
 
 ## 使用说明
 ### 1.目录
-![这里写图片描述](https://github.com/xbw12138/Data_Tagging/blob/master/res/WX20180713-123008%402x.png)
+![这里写图片描述](https://github.com/xbw12138/Data_Tagging/blob/master/res/WX20180713-123008%402x.png)<br>
 deal.py  人工标注主程序 <br>
 generate_data  存放标注结果图像 <br>
 label   存放图像对应标注文本信息 <br>
