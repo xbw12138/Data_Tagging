@@ -5,17 +5,17 @@
 
 ## 使用说明
 ### 1.目录
-![这里写图片描述](https://img-blog.csdn.net/20180713123029988?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hidzEyMTM4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-deal.py  人工标注主程序
-generate_data  存放标注结果图像
-label   存放图像对应标注文本信息
-label.py  根据generate_data数据生成图像与标注信息相对应文本信息的程序
-original_data  存放原始图像数据
+![这里写图片描述](https://github.com/xbw12138/Data_Tagging/blob/master/res/WX20180713-123008%402x.png)
+deal.py  人工标注主程序 <br>
+generate_data  存放标注结果图像 <br>
+label   存放图像对应标注文本信息 <br>
+label.py  根据generate_data数据生成图像与标注信息相对应文本信息的程序 <br>
+original_data  存放原始图像数据 <br>
 
 ---
 
 ### 2.运行环境
-Python 2.7
+Python 2.7 <br>
 OpenCV 3.1
 
 ---
@@ -23,16 +23,16 @@ OpenCV 3.1
 ### 3.使用方法
 #### 3.1标注图像
 启动程序 执行 `python deal.py` 后
-会打开original_data文件夹下的一张图片
-![这里写图片描述](https://img-blog.csdn.net/20180713124719767?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hidzEyMTM4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-例如这样，我们现在需要在图像上手动圈出气压表的位置，鼠标按下时记录一个起点，松开时记录一个终点，这样就绘制了一个矩形，把气压表框选出来。
-![这里写图片描述](https://img-blog.csdn.net/20180713124944687?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hidzEyMTM4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-没有截取运行的过程图片，框选完应该是蓝色，这时会弹出一个提示框，要求我们选择是否框选正确的提示。
-![这里写图片描述](https://img-blog.csdn.net/20180713125144406?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hidzEyMTM4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-例如这样，当我们选择错误，就会要求重新在这张图上框选，当我们确定了框选位置，就会弹出输入气压值的输入框，如下图。
-![这里写图片描述](https://img-blog.csdn.net/20180713125805315?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hidzEyMTM4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-输入气压值后，我们这张处理好的图片就会存入generate_data文件夹中，图像命名为标注信息。例如 ：  zyh_1_439_220_823_589_100.00.jpg
-439，220为左上角坐标，823，589为右下角坐标，100.00位气压值。
+会打开original_data文件夹下的一张图片<br>
+![这里写图片描述](https://github.com/xbw12138/Data_Tagging/blob/master/res/WechatIMG134.jpeg)
+例如这样，我们现在需要在图像上手动圈出气压表的位置，鼠标按下时记录一个起点，松开时记录一个终点，这样就绘制了一个矩形，把气压表框选出来。<br>
+![这里写图片描述](https://github.com/xbw12138/Data_Tagging/blob/master/res/zyh_1_439_220_823_589_100.00.jpg)
+没有截取运行的过程图片，框选完应该是蓝色，这时会弹出一个提示框，要求我们选择是否框选正确的提示。<br>
+![这里写图片描述](https://github.com/xbw12138/Data_Tagging/blob/master/res/WechatIMG408.png)
+例如这样，当我们选择错误，就会要求重新在这张图上框选，当我们确定了框选位置，就会弹出输入气压值的输入框，如下图。<br>
+![这里写图片描述](https://github.com/xbw12138/Data_Tagging/blob/master/res/WechatIMG404.png)
+输入气压值后，我们这张处理好的图片就会存入generate_data文件夹中，图像命名为标注信息。例如 ：  zyh_1_439_220_823_589_100.00.jpg  <br>
+439，220为左上角坐标，823，589为右下角坐标，100.00位气压值。 <br>
 这样我们就标注好一张图了，他会自动弹出第二张图，同上处理，直到处理完所有图片。
 
 ---
